@@ -23,15 +23,16 @@ module.exports = function (obj) {
 									delete buser._id;
 									return buser;
 								})).then(result => {
-										setTimeout(function(){
-											textchatusername = result[(Math.random() * (result.length - 1)) >> 0].value;
-											let content = { taixiu: { chat: { message: { user: botusername, value: textchatusername } } } };
-											Promise.all(Object.values(obj.users).map(function (users) {
-												Promise.all(users.map(function (member) {
-													member.red(content);
-												}));
-											}));},(Math.random() *1 + 1) * 1000
-										);
+									setTimeout(function () {
+										textchatusername = result[(Math.random() * (result.length - 1)) >> 0].value;
+										let content = { taixiu: { chat: { message: { user: botusername, value: textchatusername } } } };
+										Promise.all(Object.values(obj.users).map(function (users) {
+											Promise.all(users.map(function (member) {
+												member.red(content);
+											}));
+										}));
+									}, (Math.random() * 1 + 1) * 1000
+									);
 								});
 							}
 
@@ -41,5 +42,5 @@ module.exports = function (obj) {
 			}
 		});
 
-	}, null, true, 'Asia/Ho_Chi_Minh');
+	}, null, true, 'Asia/Yangon');
 }
