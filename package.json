@@ -40,7 +40,7 @@
 		"svg-captcha": "^1.4.0",
 		"svg2img": "^0.9.2",
 		"telebot": "1.4.1",
-		"validator": "^11.1.0",
+		"validator": "^13.7.0",
 		"voucher-code-generator": "^1.1.1"
 	},
 	"repository": {
