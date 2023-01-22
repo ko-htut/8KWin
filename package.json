@@ -8,7 +8,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
-		"bcrypt": "^5.0.1",
+		"bcrypt": "^5.1.0",
 		"bcrypt-nodejs": "0.0.3",
 		"bcryptjs": "^2.4.3",
 		"body-parser": "^1.19.0",
@@ -43,7 +43,6 @@
 		"validator": "^11.1.0",
 		"voucher-code-generator": "^1.1.1"
 	},
-	"devDependencies": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/MrT98/RedVip.git"
