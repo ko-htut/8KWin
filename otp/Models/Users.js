@@ -41,6 +41,7 @@ let Schema = new mongoose.Schema({
 Schema.methods.generateHash = function(password) {
 	return bcrypt.hashSync(password, bcrypt.genSaltSync(12), null);
 };
+// Dảng
 
 // kiểm tra mật khẩu có trùng khớp
 Schema.methods.validPassword = function(password) {

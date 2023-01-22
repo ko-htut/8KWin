@@ -1,4 +1,4 @@
-//kohtut.me - chia sẻ học hỏi
+//kohtut.me - share learning
 require('dotenv').config();
 var cors = require('cors');
 const path = require('path');

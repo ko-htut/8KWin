@@ -1,4 +1,4 @@
-//kohtut.me - chia sẻ học hỏi
+//kohtut.me - share learning
 const TeleBot = require('telebot');
 const bot = new TeleBot('5546294369:AAE50xH8-Eeo-kNCiXNDT_XW3RgjnumZlwI');
 let configDB = require('../config/database');
