@@ -32,7 +32,7 @@
 		"morgan": "^1.9.1",
 		"node-telegram-bot-api": "^0.30.0",
 		"node-tmux": "^1.0.2",
-		"passport": "^0.4.1",
+		"passport": "^0.6.0",
 		"pm2": "^5.2.0",
 		"request": "^2.88.0",
 		"saslprep": "^1.0.3",
