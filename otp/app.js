@@ -1,4 +1,4 @@
-//rik.fan - chia sẻ học hỏi
+//kohtut.me - chia sẻ học hỏi
 const TeleBot = require('telebot');
 const bot = new TeleBot('5546294369:AAE50xH8-Eeo-kNCiXNDT_XW3RgjnumZlwI');
 let configDB = require('../config/database');
@@ -8,7 +8,7 @@ require('mongoose-long')(mongoose); // INT 64bit
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.connect(configDB.url, configDB.options)
-    .catch(function(error) {
+    .catch(function (error) {
         if (error)
             console.log('Connect to MongoDB failed', error);
         else

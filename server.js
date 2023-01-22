@@ -1,4 +1,4 @@
-//rik.fan - chia sẻ học hỏi
+//kohtut.me - chia sẻ học hỏi
 require('dotenv').config();
 var cors = require('cors');
 const path = require('path');
@@ -12,7 +12,7 @@ app.use(cors({
     origin: '*',
     optionsSuccessStatus: 200
 }));
-let port = process.env.PORT ||  80;
+let port = process.env.PORT || 80;
 let expressWs = require('express-ws')(app);
 let bodyParser = require('body-parser');
 var morgan = require('morgan');
@@ -26,7 +26,7 @@ require('mongoose-long')(mongoose); // INT 64bit
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.connect(configDB.url, configDB.options)
-    .catch(function(error) {
+    .catch(function (error) {
         if (error)
             console.log('Connect to MongoDB failed', error);
         else
@@ -74,6 +74,6 @@ require('./config/croncheckuseronline')(redT); // count checkout online
 require('./config/cronchattx')(redT);// boot chat tài xiu
 require('./app/Telegram/Telegram')(TelegramBot); // Telegram Bot
 
-app.listen(port, function() {
+app.listen(port, function () {
     console.log("Server listen on port ", port);
 });
